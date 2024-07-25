@@ -11,11 +11,9 @@ int main(){
         scanf("%d", &guess);
         if (guess > number){
             printf("Lower number please!\n");
-        }
-        else if (guess < number){
+        } else if (guess < number) {
             printf("Higher number please!\n");
-        }
-        else{
+        } else {
             printf("You guessed it in %d attempts\n", nguesses);
             break;
         }
