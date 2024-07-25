@@ -2,25 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main()
-{
+int main(){
     int number, guess, nguesses = 1;
     srand(time(0));
     number = rand() % 100 + 1;
     printf("Guess the number between 1 to 100\n");
-    do
-    {
+    do{
         scanf("%d", &guess);
-        if (guess > number)
-        {
+        if (guess > number){
             printf("Lower number please!\n");
         }
-        else if (guess < number)
-        {
+        else if (guess < number){
             printf("Higher number please!\n");
         }
-        else
-        {
+        else{
             printf("You guessed it in %d attempts\n", nguesses);
             break;
         }
